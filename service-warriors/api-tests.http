@@ -1,0 +1,14 @@
+### Should throw 401 when missing apikey
+GET http://localhost:8080/api/v1/warriors
+
+
+### Should throw 401 on invalid apikey
+GET http://localhost:8080/api/v1/warriors
+apikey: G02TheBeach==
+
+
+### Should get warriors (75%)  and throw 500 (25%)
+GET http://localhost:8080/api/v1/warriors
+apikey: Z2FtZTpnYW1lMQ==
+
+###

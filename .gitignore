@@ -1,0 +1,8 @@
+/.idea/
+/.vscode/
+*/.ballerina/
+*/target/
+*.log
+*.iml
+*/docker/
+*/*.jar
