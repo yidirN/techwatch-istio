@@ -1,0 +1,13 @@
+version: 2
+jobs:
+  build:
+    docker:
+      - image: ballerina/ballerina
+    steps:
+      - checkout
+      - run: cd service-warriors && ballerina build service-warriors.bal
+workflows:
+  version: 2
+  build_and_test:
+    jobs:
+      - build
