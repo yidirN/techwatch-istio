@@ -13,10 +13,5 @@ jobs:
             echo ***************************************************************************'
             cd service-warriors
             ballerina build service-warriors.bal
-      - run:
-          name: Test docker
-          command: |
-            echo ***************************************************************************'
-            echo '**************************** Test docker *********************************'
-            echo ***************************************************************************'
-            docker ps
+            ballerina run service-warriors.bal
+            curl GET http://localhost:8080/api/v1/warriors

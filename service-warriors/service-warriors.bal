@@ -1,13 +1,8 @@
-import ballerina/docker;
 import ballerina/http;
 import ballerina/log;
 
-@docker:Expose {}
-@docker:Config {
-    registry: "inaitali/techwatch-ballerina",
-    name: "service-warriors",
-    tag: "1.O.O"
-}
+//@docker:Expose {}
+//@docker:Config {registry: "inaitali/techwatch-ballerina",name: "service-warriors",tag: "1.O.O"}
 
 listener http:Listener warriorsListener = new (8080);
 
