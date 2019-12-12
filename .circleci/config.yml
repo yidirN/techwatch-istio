@@ -8,8 +8,10 @@ jobs:
       - run:
           name: Build the project
           command: |
-            echo ***************************************************************************'
-            echo '******** Build the project using ballerina/ballerina docker image ********'
-            echo ***************************************************************************'
+            echo '***************************************************************************'
+            echo '******** Build the project using ballerina/ballerina docker image *********'
+            echo '***************************************************************************'
             cd service-warriors
             ballerina build service-warriors.bal
+            ls -a
+
